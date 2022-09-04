@@ -1,0 +1,40 @@
+:root{
+--text-background-color: #212121;
+--background-color: #757575;
+
+}
+body {
+    color: #757575;
+background-color: #F5F5F5;
+}
+
+.list{
+    list-style: none;
+}
+/* site-nav */
+.site-nav .link{
+    color: black;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: blue;
+}
+.logo{
+    color: #2196F3;
+}
+
+/* sections */
+
+.section{
+    color: aqua;
+}
+
+/* colors: text background: #212121;
+background: #757575;
+background: #2196F3;
+background: linear-gradient(0deg, #000000, #000000),
+linear-gradient(0deg, #2196F3, #2196F3);
+blue background: #2196F3;
+bgc 3 #F5F4FA;
+bg  2 #F5F5F5 */
