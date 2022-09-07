@@ -1,40 +1,107 @@
-:root{
---text-background-color: #212121;
---background-color: #757575;
-
+:root {
+    --text-background-color: #212121;
+    --text-white-color: #ffffff;
+    --contacts-color: #757575;
+    --background-white-color: #F5F5F5;
+    --background-milk-color:#F5F4FA;
+    --accent-color: #2196F3;
+    --site-nav-link: #000000;
+    --black-background-color: #2F303A;
 }
+
 body {
-    color: #757575;
-background-color: #F5F5F5;
+    font-family: Roboto;
+    background-color: var(--background-white-color);
+    color: #757575
 }
 
-.list{
+.contacts .link {
+    color: var(--contacts-color);
+}
+/* deactivates */
+.list {
     list-style: none;
 }
+
+a {
+    text-decoration: none;
+}
+
 /* site-nav */
-.site-nav .link{
-    color: black;
+.site-nav .link {
+    color: var(--site-nav-link);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus{
-    color: blue;
-}
-.logo{
-    color: #2196F3;
+.site-nav .link.current {
+    color: var(--accent-color)
 }
 
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+.studio{
+    color: var(--text-white-color);
+}
 /* sections */
 
-.section{
-    color: aqua;
+.section {}
+.team{
+    background-color:var(--background-milk-color);
+}
+.hero {
+    background: var(--black-background-color);
+
 }
 
-/* colors: text background: #212121;
-background: #757575;
-background: #2196F3;
-background: linear-gradient(0deg, #000000, #000000),
-linear-gradient(0deg, #2196F3, #2196F3);
-blue background: #2196F3;
-bgc 3 #F5F4FA;
-bg  2 #F5F5F5 */
+h1 {
+    text-transform: uppercase;
+}
+
+.hero-title {
+    
+
+}
+
+h2,
+h3 {
+    color: #212121;
+}
+
+/* buttons */
+.button {
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+    border: 0;
+}
+
+.button .first {}
+
+.button .second {}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+footer{
+    background-color:var(--black-background-color)
+}
+.footer-contacts{
+    color: rgb(100%,100%,100%,0.6);
+}
+address{
+    color: var(--text-white-color);
+}
