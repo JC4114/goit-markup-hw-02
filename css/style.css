@@ -1,6 +1,6 @@
 :root {
-    --text-background-color: #212121;
-    --text-white-color: #ffffff;
+    --text-black-color: #212121;
+    --white-color: #ffffff;
     --contacts-color: #757575;
     --background-white-color: #F5F5F5;
     --background-milk-color:#F5F4FA;
@@ -12,7 +12,7 @@
 body {
     font-family: Roboto;
     background-color: var(--background-white-color);
-    color: #757575
+    color:var(--contacts-color)
 }
 
 .contacts .link {
@@ -45,38 +45,53 @@ a {
     color: var(--accent-color);
 }
 .studio{
-    color: var(--text-white-color);
+    color: var(--white-color);
 }
 /* sections */
 
-.section {}
+.section {
+
+}
 .team{
     background-color:var(--background-milk-color);
+}
+.team li{
+    background-color:var(--white-color);
 }
 .hero {
     background: var(--black-background-color);
 
 }
 
-h1 {
-    text-transform: uppercase;
-}
+
 
 .hero-title {
     
 
 }
-
+/* h */
+h1 {
+    text-transform: uppercase;
+}
 h2,
 h3 {
-    color: #212121;
+    color:var(--text-black-color);
 }
 
 /* buttons */
 .button {
+    cursor: pointer;
+    color: var(--text-black-color);
+    background-color:var(--background-milk-color);
+    font-family: roboto;
+    font-style: medium ;
+font-size: 16px;
+letter-spacing: 3%;
+}
+.button:hover,
+.button:focus{
     background-color: var(--accent-color);
-    color: var(--text-white-color);
-    border: 0;
+    color: var(--white-color);
 }
 
 .button .first {}
@@ -103,5 +118,5 @@ footer{
     color: rgb(100%,100%,100%,0.6);
 }
 address{
-    color: var(--text-white-color);
+    color: var(--white-color);
 }
