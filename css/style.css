@@ -3,21 +3,21 @@
     --white-color: #ffffff;
     --contacts-color: #757575;
     --background-white-color: #F5F5F5;
-    --background-milk-color:#F5F4FA;
+    --background-milk-color: #F5F4FA;
     --accent-color: #2196F3;
     --site-nav-link: #000000;
     --black-background-color: #2F303A;
 }
 
 body {
-    font-family: Roboto;
     background-color: var(--background-white-color);
-    color:var(--contacts-color)
+    color: var(--contacts-color)
 }
 
 .contacts .link {
     color: var(--contacts-color);
 }
+
 /* deactivates */
 .list {
     list-style: none;
@@ -25,6 +25,19 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* site-nav */
@@ -44,79 +57,79 @@ a {
 .logo {
     color: var(--accent-color);
 }
-.studio{
+
+.studio {
     color: var(--white-color);
 }
+
 /* sections */
 
-.section {
 
+.team {
+    background-color: var(--background-milk-color);
 }
-.team{
-    background-color:var(--background-milk-color);
+
+.team li {
+    background-color: var(--white-color);
 }
-.team li{
-    background-color:var(--white-color);
-}
+
 .hero {
     background: var(--black-background-color);
 
 }
 
-
-
 .hero-title {
-    
-
-}
-/* h */
-h1 {
     text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
 }
+
+.portfolio li {
+    background-color: var(--white-color);
+}
+
+/* h */
+
 h2,
 h3 {
-    color:var(--text-black-color);
+    color: var(--text-black-color);
 }
 
 /* buttons */
 .button {
     cursor: pointer;
     color: var(--text-black-color);
-    background-color:var(--background-milk-color);
+    background-color: var(--background-milk-color);
     font-family: roboto;
-    font-style: medium ;
-font-size: 16px;
-letter-spacing: 3%;
+    font-size: 16px;
+    border: none;
 }
+
 .button:hover,
-.button:focus{
+.button:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
 
-.button .first {}
+.button.first {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
 
 .button .second {}
 
-.hide {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+footer {
+    background-color: var(--black-background-color)
 }
 
-footer{
-    background-color:var(--black-background-color)
+.footer-contacts {
+    color: rgb(100%, 100%, 100%, 0.6);
 }
-.footer-contacts{
-    color: rgb(100%,100%,100%,0.6);
-}
-address{
+
+address {
     color: var(--white-color);
 }
